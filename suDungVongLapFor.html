@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<h1>Vui lòng chọn bài cần làm với:</h1>
+	<h2>Bài 1 là in ra đoạn text</h2>
+	<h2>Bài 2 là tính tổng các số từ 0 đến N (N nhập từ bàn phím) </h2>
+	<input type="button" onclick="Bai1()" value="Bai 1">
+	<input type="button" onclick="Bai2()" value="Bai 2">
+	<script type="text/javascript">
+		function Bai1() {
+			var text='';
+		for(var i=0;i<=5;i++){
+			text+="The number is "+i+"<br>";
+		}
+		document.write(text);
+		}
+		
+		function Bai2() {
+		var soN=parseInt(prompt("Nhap vao mot so: "));
+		var tong=0;
+		for(var i=0;i<=soN;i++){
+			tong+=i;
+		}
+		document.write("Tong tu 0 den "+soN+" = "+tong);
+	}
+	</script>
+</body>
+</html>

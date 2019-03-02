@@ -1,0 +1,56 @@
+*{
+	margin: 0;
+	padding: 0;
+	border:0;
+}
+.main-contain{
+	width:745px;
+	background-color: #FFFFFF;
+	margin: 10px;
+}
+article.tin-chinh{
+	padding:10px;
+	background-color:#FFFFFF;
+}
+.hinh{
+width: 100%;
+}
+
+.main-contain h3{
+	color: whites;
+	background-color: red;
+	width:40px;
+	font-family: Arial;
+}
+.link-hinh{
+	margin-bottom: 10px;
+	display: block;
+}
+.link-new{
+	display:block;
+	text-decoration: none;
+	color: black;
+	font-size: 25px;
+	font-family: Arial;
+}
+a.link-new:hover{
+	color: #66FF66;
+}
+.link-new-2{
+	display:block;
+	text-decoration: none;
+	color: black;
+	font-size: 20px;
+	font-family: Arial;
+}
+a.link-new-2:hover{
+	color: red;
+}
+div.khoi-tin-phu{
+width: 240px;
+float:left;
+margin-right:8px; 
+}
+div.khoi-tin-phu p{
+	color:red;
+}

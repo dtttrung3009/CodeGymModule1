@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<form>
+		<input id="dau" type="text"  >
+		<input id="cuoi" type="text"  ><br><br>
+	</form>
+	<button onclick="myFuction1()">Addition(+)</button>
+	<button onclick="myFuction2()">Subtraction(-)</button>
+	<button onclick="myFuction3()">Multiplication(X)</button>
+	<button onclick="myFuction4()">Division(/)</button>
+	<p>Result</p>
+	<p id="ketQua"></p>
+	<script type="text/javascript">
+		function myFuction1(){
+			var start= document.getElementById("dau").value;
+			var end= document.getElementById("cuoi").value;
+			var add= parseInt(start)+parseInt(end);
+			document.getElementById("ketQua").innerHTML=add;}
+		function myFuction2(){
+			var start= document.getElementById("dau").value;
+			var end= document.getElementById("cuoi").value;
+			document.getElementById("ketQua").innerHTML=(start-end);}
+		function myFuction3(){
+			var start= document.getElementById("dau").value;
+			var end= document.getElementById("cuoi").value;
+			document.getElementById("ketQua").innerHTML=(start*end);}
+		function myFuction4(){
+			var start= document.getElementById("dau").value;
+			var end= document.getElementById("cuoi").value;
+			document.getElementById("ketQua").innerHTML=(start/end);}
+	</script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<form>
+		Amount:<br>
+		<input id="giaTri" type="number">
+	</form>
+	From currency:<br>
+		<input id="from" type="text" list="start"/>
+		<datalist id="start" >
+			<option value="Viet Nam">
+			<option value="USD">
+		</datalist>
+		<br>
+	To currency:<br>
+		<input id="to" type="text" list="end"/>
+		<datalist id="end">
+			<option value="Viet Nam">
+			<option value="USD">
+		</datalist>
+	<button onclick="myFuction()">Send</button>
+	<script type="text/javascript">
+		function myFuction(){
+		var giaTri=document.getElementById("giaTri").value;
+		if((document.getElementById("from").value)=="Viet Nam" && (document.getElementById("to").value)=="USD"){
+			alert(giaTri/20000);
+		}else if((document.getElementById("from").value)=="USD" && (document.getElementById("to").value)=="Viet Nam")
+		{
+			alert(giaTri*20000);
+		}
+		else{
+			alert(giaTri);
+		}
+	}
+	</script>
+</body>
+</html>
